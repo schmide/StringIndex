@@ -1,11 +1,5 @@
 #define SIZEOFSTRINGARRAY(a) (sizeof(a) / sizeof(a[0]))
 
-String strings[] = {
-  "this",
-  "that",
-  "bother"
-};
-
 int IndexOfString(int stringCount, String strings[], String theString) {
   int index = 0;
   while (index < stringCount) {
@@ -17,6 +11,12 @@ int IndexOfString(int stringCount, String strings[], String theString) {
 }
 
 void CheckString(String theString) {
+
+  String strings[] = {
+    "this",
+    "that",
+    "bother"
+  };
   switch (IndexOfString(SIZEOFSTRINGARRAY(strings), strings, theString))
   {
     case 0:
