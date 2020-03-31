@@ -1,2 +1,2 @@
 # StringIndex
- string parser
+  simple case string parser 
