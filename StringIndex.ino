@@ -11,7 +11,7 @@ int IndexOfString(int stringCount, String strings[], String theString) {
 }
 
 void CheckString(String theString) {
-
+  // strings can be local or global
   String strings[] = {
     "this",
     "that",
