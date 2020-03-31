@@ -6,8 +6,7 @@ String strings[] = {
   "bother"
 };
 
-int IndexOfString(int stringCount, String strings[], String theString)
-{
+int IndexOfString(int stringCount, String strings[], String theString) {
   int index = 0;
   while (index < stringCount) {
     if (!strings[index].compareTo(theString))
