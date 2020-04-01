@@ -1,12 +1,9 @@
 #define SIZEOFSTRINGARRAY(a) (sizeof(a) / sizeof(a[0]))
 
 int IndexOfString(int stringCount, String strings[], String theString) {
-  int index = 0;
-  while (index < stringCount) {
-    if (!strings[index].compareTo(theString))
-      return index;
-    index++;
-  }
+  for (int i = 0; i < stringCount; i++) 
+    if (!strings[i].compareTo(theString))
+      return i;
   return -1;
 }
 
