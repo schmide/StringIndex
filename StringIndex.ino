@@ -28,7 +28,8 @@ void CheckString(String theString) {
     default:
       Serial.println("none");
       break;
-  }
+      
+  }  
 }
 
 void setup() {
